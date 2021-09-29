@@ -25,7 +25,7 @@ dotnet new sln -n $NAME
 # Create projects
 dotnet new mvc -o $WEBNAME
 dotnet new classlib -f netstandard2.1 -o $DOMAINNAME
-dotnet new xunit $TESTNAME
+dotnet new xunit -o $TESTNAME
 
 # Add projects to solution
 dotnet sln add $WEBNAME/$WEBNAME.csproj
